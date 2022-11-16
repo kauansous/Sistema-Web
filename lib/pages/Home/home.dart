@@ -89,8 +89,9 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.only(left: 16, right: 24),
                       child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           IconButton(
                             onPressed: updateLargura,
@@ -99,6 +100,26 @@ class _HomeState extends State<Home> {
                               color: Colors.black,
                               size: 32,
                             ),
+                          ),
+                          Spacer(),
+                          Icon(Icons.notifications,size: 32,),
+                          SizedBox(width: 32,),
+                          Icon(Icons.person_pin,size: 32,),
+                          Text(
+                            "Mônica",
+                            style: TextStyle(
+                                fontSize: 32,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600),
+                          ),
+                          SizedBox(width: 32,),
+                          Icon(Icons.exit_to_app,size: 32,),
+                          Text(
+                            "Sair",
+                            style: TextStyle(
+                                fontSize: 32,
+                                color: Color.fromARGB(255, 180, 15, 3),
+                                fontWeight: FontWeight.w600),
                           ),
                         ],
                       ),
