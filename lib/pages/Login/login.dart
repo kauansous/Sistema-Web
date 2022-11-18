@@ -96,7 +96,7 @@ class Login extends StatelessWidget {
                             onPressed: () {
                               if (_formkey.currentState!.validate()) {
                                 Navigator.of(context)
-                                .pushReplacementNamed(Routes.Home);
+                                .pushNamed(Routes.Home);
                               }
                             },
                             child: Text(

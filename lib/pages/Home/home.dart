@@ -65,6 +65,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 2, 40, 98),
+      appBar: AppBar(
+      ),
       body: Row(
         children: [
           AnimatedSize(
@@ -106,7 +108,7 @@ class _HomeState extends State<Home> {
                           SizedBox(width: 32,),
                           Icon(Icons.person_pin,size: 32,),
                           Text(
-                            "Mônica",
+                            "Fabiano Gadelha",
                             style: TextStyle(
                                 fontSize: 32,
                                 color: Colors.black,

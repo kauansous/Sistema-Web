@@ -1,9 +1,12 @@
 // ignore_for_file: prefer_const_constructors, depend_on_referenced_packages
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:residencia_ufc/database/mongodb.dart';
 import 'package:residencia_ufc/theme/theme.dart';
 import 'package:device_preview/device_preview.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await MongoDatabase.connect();
   runApp(DevicePreview(enabled: !kReleaseMode, builder: (context) => MyApp()));
 }

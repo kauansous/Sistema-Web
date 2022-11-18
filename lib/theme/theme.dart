@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      onGenerateRoute: RouteGenerator.generateRoute,
       initialRoute: Routes.Login,
       // ignore: prefer_const_literals_to_create_immutables
       routes: {
